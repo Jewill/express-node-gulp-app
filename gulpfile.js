@@ -59,7 +59,7 @@ gulp.task('build-js-uglify', () => {
         .pipe(babel({
             presets: ['env', 'es2015']
         }))
-        // .pipe(uglify())
+        .pipe(uglify())
         .pipe(gulp.dest('www'));
 });
 
